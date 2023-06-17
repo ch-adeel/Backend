@@ -1,0 +1,9 @@
+const express=require('express')
+const router=express.Router()
+const {SignupController}=require('../Controller/Signup_Controller')
+const {logincontroller}=require('../Controller/logincontroller')
+
+router.post('/Signup',SignupController)
+router.get('/login',logincontroller)
+
+module.exports = router
